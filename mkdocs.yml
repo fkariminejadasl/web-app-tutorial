@@ -1,0 +1,7 @@
+site_name: "Web App Tutorial"
+nav:
+  - Github from Markdown: github_md.md
+  - Tutorial:
+      - Iframe: tutorial/iframe.md
+theme:
+  name: material #readthedocs
