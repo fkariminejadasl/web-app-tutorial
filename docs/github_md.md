@@ -184,9 +184,9 @@ Once the DNS settings propagate (which can take a few hours), your GitHub Pages 
 
 1. Run `mkdocs gh-deploy` to build and deploy your documentation:
 
-   ```bash
-   mkdocs gh-deploy
-   ```
+```bash
+mkdocs gh-deploy
+```
 
 2. If you're using a custom domain, create a `CNAME` file containing your domain name (e.g., `www.yourdomain.com`) and configure your domain’s DNS settings.
 
