@@ -6,7 +6,7 @@ Making a GitHub Page for your markdown documents is easy with `mkdocs`. Essentia
 ```bash
 pip install mkdocs
 
-# This command is optional. It simply creates the docs folder and mkdocs.yml file, which can be done manually.
+# This command is optional. It simply creates the docs folder with index.md and mkdocs.yml file, which can be done manually.
 mkdocs new .
 
 # Serve locally at http://127.0.0.1:8000 to check that everything is running smoothly.
@@ -16,7 +16,7 @@ mkdocs serve
 mkdocs gh-deploy
 ```
 
-Move all markdown files to the `docs` folder and create the `mkdocs.yml` file in the root of the repository. If `README.md` is important, it should be renamed to `index.md`. Alternatively, running `mkdocs new .` will automatically create the `mkdocs.yml` file and `docs` folder with an `index.md` file.
+Move all markdown files to the `docs` folder and create the `mkdocs.yml` file in the root of the repository. If you have a `README.md` file, it can remain as is, but you should remove the `index.md` file if it is automatically created by `mkdocs new .`. Alternatively, you can rename `README.md` to `index.md`. Running `mkdocs new .` will automatically create the `mkdocs.yml` file and the `docs` folder with an `index.md` file.
 
 ### Example Repository Structure
 
@@ -37,7 +37,7 @@ In `mkdocs.yml`, add the following configuration. If you're using the `material`
 ```yaml
 site_name: "Web App Tutorial"
 nav:
-  - Home: README.md
+  - README.md # or index.md or remove it.
   - Cheatsheet: cheatsheet.md
   - Tutorial:
       - Iframe: tutorial/iframe.md
