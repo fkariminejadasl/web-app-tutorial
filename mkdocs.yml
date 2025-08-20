@@ -1,7 +1,9 @@
-site_name: "Web App Tutorial"
+site_name: Web App Tutorial
+site_url: https://fkariminejadasl.github.io/web-app-tutorial/
 nav:
   - Github from Markdown: github_md.md
   - Simple App: simple_app.md
+  - Tools: tools.md
   - Tutorial:
       - Iframe: tutorial/iframe.md
 theme:
