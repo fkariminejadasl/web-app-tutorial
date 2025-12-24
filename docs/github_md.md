@@ -194,9 +194,29 @@ mkdocs gh-deploy
 
 ---
 
-#### Type formula
+## Type formula
 
-Type inline $\omega$ or as a separate file:
+1. Add in `mkdocs.yaml`
+
+```
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js
+```
+
+2. Add in `pip install pymdown-extensions` in `.github\workflows\deploy.md`:
+
+```
+    - name: Install dependencies
+      run: |
+        pip install mkdocs
+        pip install mkdocs-material
+        pip install pymdown-extensions # New
+```
+
+Type formulas as in Latex, e.g. inline $\omega$ with `$\omega` or as a separate line with `$$x^2 + y^2 = 1$$` or `\[x^2 + y^2 = 1\]`:
 
 $$x^2 + y^2 = 1$$
 
