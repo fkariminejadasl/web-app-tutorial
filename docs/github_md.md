@@ -192,3 +192,11 @@ mkdocs gh-deploy
 
 3. GitHub Pages will now serve your MkDocs site at either `https://<your-username>.github.io/<repository-name>` or your custom domain, if configured.
 
+---
+
+#### Type formula
+
+Type inline $\omega$ or as a separate file:
+
+$$x^2 + y^2 = 1$$
+
